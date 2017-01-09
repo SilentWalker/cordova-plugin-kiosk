@@ -19,20 +19,20 @@ public class HomeActivity extends Activity {
     
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        HomeActivity.this.startKioskActivity();
+        // LinearLayout layout = new LinearLayout(this);
+        // LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
         
-        LinearLayout layout = new LinearLayout(this);
-        LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
+        // Button button = new Button(this);
+        // button.setText("Click or press any key to begin...");
+        // button.setOnClickListener(new View.OnClickListener() {
+        //     public void onClick(View v) {
+        //         HomeActivity.this.startKioskActivity();
+        //     }
+        // });
+        // layout.addView(button, params);
         
-        Button button = new Button(this);
-        button.setText("Click or press any key to begin...");
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                HomeActivity.this.startKioskActivity();
-            }
-        });
-        layout.addView(button, params);
-        
-        setContentView(layout);
+        // setContentView(layout);
     }
     
     @Override
